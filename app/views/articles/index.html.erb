@@ -1,0 +1,22 @@
+<h1>Titulo do Programa</h1>
+    <%= link_to 'Novo Livro', new_article_path %>
+<br>
+    <%= link_to 'Voltar', root_path %>
+    <hr>
+    <% @articles.each do |article| %>
+        
+       <h2> Titulo: </h2>
+       <%= article.title %>
+       <%= link_to 'Mostrar', article_path(article) %>
+       <%= link_to 'Editar', edit_article_path(article) %>
+       <%= link_to 'Deletar', article_path(article), method: :delete, data: {confirm: 'Será mesmo que tu quer deletar isso?'} %>
+       <br>    
+
+       <h2> Texto: </h2>
+        <%= article.text %>
+
+        <h2> Publicacao: </h2>
+        <%= article.pub %>
+        <hr>
+
+    <% end %>
