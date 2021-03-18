@@ -1,15 +1,15 @@
 <h1> Edição de Informações </h1>
 
-<%= form_for :article, url: article_path(@article), method: :patch do |f| %>
+<%= form_for :article, url: article_path(@livro), method: :patch do |f| %>
  
-    <% if @article.errors.any? %>
+    <% if @livro.errors.any? %>
       <div id="error_explanation">
         <h2>
-          <%= pluralize(@article.errors.count, "error") %> prohibited
+          <%= pluralize(@livro.errors.count, "error") %> prohibited
           this article from being saved:
         </h2>
         <ul>
-          <% @article.errors.full_messages.each do |msg| %>
+          <% @livro.errors.full_messages.each do |msg| %>
             <li><%= msg %></li>
           <% end %>
         </ul>
@@ -37,4 +37,4 @@
    
   <% end %>
    
-  <%= link_to 'Voltar', articles_path %>
+  <%= link_to 'Voltar', articles_path, class: 'btn btn-primary btn-lg active' %>

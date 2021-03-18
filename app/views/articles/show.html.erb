@@ -1,16 +1,16 @@
 <p>
 <strong>Título:</strong>
-<%= @article.title %>
+<%= @livro.title %>
 </p>
 
 <p>
 <strong>Texto:</strong>
-<%= @article.text %>
+<%= @livro.text %>
 </p>
 
 <p>
 <strong>Publicação:</strong>
-<%= @article.pub %>
+<%= @livro.pub %>
 </p>
-<%= link_to 'Editar', edit_article_path(@article) %>
-<%= link_to 'Voltar', articles_path %>
+<%= link_to 'Editar', edit_article_path(@livro), class: 'btn btn-primary btn-lg active' %>
+<%= link_to 'Voltar', articles_path, class: 'btn btn-primary btn-lg active' %>

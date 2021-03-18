@@ -1,22 +1,26 @@
+<div class="text-center m-5"> 
 <h1>Titulo do Programa</h1>
-    <%= link_to 'Novo Livro', new_article_path %>
-<br>
-    <%= link_to 'Voltar', root_path %>
+</div>
     <hr>
-    <% @articles.each do |article| %>
+    <% @livros.each do |livro| %>
         
        <h2> Titulo: </h2>
-       <%= article.title %>
-       <%= link_to 'Mostrar', article_path(article) %>
-       <%= link_to 'Editar', edit_article_path(article) %>
-       <%= link_to 'Deletar', article_path(article), method: :delete, data: {confirm: 'Será mesmo que tu quer deletar isso?'} %>
+       <%= livro.title %>
+       <%= link_to 'Mostrar', article_path(livro)%>
+       <%= link_to 'Editar', edit_article_path(livro)%>
+       <%= link_to 'Deletar', article_path(livro), method: :delete, data: {confirm: 'Será mesmo que tu quer deletar isso?'} %>
        <br>    
 
        <h2> Texto: </h2>
-        <%= article.text %>
+        <%= livro.text %>
 
         <h2> Publicacao: </h2>
-        <%= article.pub %>
+        <%= livro.pub %>
         <hr>
 
     <% end %>
+     <%= link_to 'Novo Livro', new_article_path, class: 'btn btn-primary btn-lg active' %>
+<br>
+<br>
+  <%= link_to 'Voltar', root_path, class: 'btn btn-primary btn-lg active' %>
+<br>
