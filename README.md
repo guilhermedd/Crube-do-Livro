@@ -1,24 +1,16 @@
-# README
+# Crube do Livro
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Arroy =D turubom?
+## iwaoiwmdoaiwaowidawidaIWdoaiwmdapiw
+- `Ruby 2.7.2`
+- `Bundler 2.1.4`
+- `Rails 6.1.3`
+- `PostgreSQL`
 
-Things you may want to cover:
+## Executar
+1. `rails db:setup`
+2. `rails webpacker:install`
+3. `rails s`
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Site :
+https://polar-hollows-02809.herokuapp.com/
